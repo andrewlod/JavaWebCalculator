@@ -9,6 +9,7 @@ This project was developed in Eclipse IDE, created with Maven architecture with 
 - Hibernate
 - MySQL
 - Spring Boot + MVC
+- Thymeleaf
 - Exp4j (mathematical expression parsing)
 
 ## Preview
