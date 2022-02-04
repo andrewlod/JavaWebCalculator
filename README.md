@@ -15,4 +15,15 @@ This project was developed in Eclipse IDE, created with Maven architecture with 
 ## Preview
 Here are a few screenshots of the application running. As its focus is to demonstrate the Java structure behind the Web pages, they may look raw. You may refer to https://github.com/andrewlod/react-spotify-clone for an application example with stylized Web pages created with React.
 
-TODO: add screenshots
+#### Main page
+![Alt text](readme_assets/index.png?raw=true "Title")
+#### Register
+![Alt text](readme_assets/register.png?raw=true "Title")
+#### Authentication
+![Alt text](readme_assets/auth.png?raw=true "Title")
+#### Typing expression
+![Alt text](readme_assets/operation.png?raw=true "Title")
+#### Result with no history
+![Alt text](readme_assets/result.png?raw=true "Title")
+#### Result with history
+![Alt text](readme_assets/result_history.png?raw=true "Title")
