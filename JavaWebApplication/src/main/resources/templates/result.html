@@ -1,0 +1,35 @@
+<!DOCTYPE html SYSTEM "http://www.thymeleaf.org/dtd/xhtml1-strict-thymeleaf-4.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+	<head>
+		<title>Result</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	</head>
+	<body>
+		<form action="/" method="get">
+			<p th:text="'The result is: ' + ${result}"/>
+			<br/>
+			<input type="submit" value="Voltar" />
+			
+			<p>Previous operations</p>
+        	<table>
+  				<thead>
+    				<tr>
+      					<th>Expression</th>
+      					<th>Result</th>
+    				</tr>
+  				</thead>
+  				<tbody>
+					<tr th:if="${operations.empty}">
+	            		<td colspan="2"> You have not made any operations before. </td>
+        			</tr>
+    				<tr th:each="operation: ${operations}">
+      					<td th:text="${operation.getExpression()}" />
+      					<td th:text="${operation.getResult()}" />
+    				</tr>
+  				</tbody>
+			</table>
+		</form>
+	</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html SYSTEM "http://www.thymeleaf.org/dtd/xhtml1-strict-thymeleaf-4.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+	<head>
+		<title>Math expression</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	</head>
+	<body>
+		<p th:text="'Hello, ' + ${name} + '!'"/>
+		<p>Type a math expression below:</p>
+		<form action="/result" method="post">
+			<input id="expression" name="expression" type="text" />
+			=
+			<input type="hidden" name="token" th:value="${token}" />
+			<br/>
+			<input type="submit" />
+		</form>
+	</body>
+</html>
